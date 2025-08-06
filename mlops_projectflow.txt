@@ -1,0 +1,39 @@
+
+
+Pipeline structure of MLops Proiject 
+
+
+1. We creates a template for the whole Project ( folder + files ) using template.py to save time  . 
+
+2. We write some inside info about pckages etc usign setup.py and pyproject.toml ( tom obv minimal lang ) file 
+
+# Anaconda ( conda env ) is liek a DS toolkit that helps us to make DS and AI project much easily . 
+like pre-written code (conda make env )  to mae a new env with new packages and new .py versions 
+
+3. We create a new anaconda env for our whoel MLOps project ( mdoel building pipeline -> deploymrr -> poduction )
+( 'conda create -n <env_name python-version  -y'  >)
+
+4. write the lsit of all modules and packages needed for our project .( and downalod in this new env usign -> 'pip install -r req.txt' ) 
+
+
+5. activate the NEW env , downalod the odules and start workign roject ( in  this NEW env ) 
+
+# setup a database on MongoDB ( NO SQL databaase ) fromw ehre our pirpline will pulld ata and train ML mdoel on ti an store it 
+
+# uSe of -e . in requiment.txt file at end ? 
+# to downlaod locla packahe we are going to make in out Project ( usign python OOPs ) to be installed corrctly 
+toolkit# prewritten python modules , ( works with setup.py ( setup() --> find_packages()  inside src folder ) and 
+toml file gives it some extra metadata info.  )
+# -e. always requires a setup.py file to isntall OUR pacages as also locla packaegs in env 
+# so tat all fucntion / obj / classes we make insdie src folder ( will be tretaed as normal mdoule ot packages in env )
+
+
+6. 
+MongoDB atlas ( cloud service ) that helps users to store their non0relational db (json form etc ) online . 
+( Organization (company)--> Project --> databases ( clusters on mongodb )--> authrozie networks an db users usign a pasowrd )
+and then use this pasword inside a cokection strign to acces the data insid these clsuters ( db) from anywhere . 
+
+MongoDB Org Project cluster DB -> ( username =  polygot882    , password = r9H4CU0CyyRPvZ28  )
+
+connection string to conect with data store din any mongodb clsuter (whuc e have acces to )
+mongodb+srv://polygot882:<db_password>@cluster0.evcpkk7.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
