@@ -8,6 +8,7 @@ class DataIngestionArtifact:
     trained_file_path:str 
     test_file_path:str
 
+''' returns the message and sattus after valdating the Dataset (based on Schema.yaml ) file after Data inegstion from MongDB DB in artifacts/ '''
 @dataclass
 class DataValidationArtifact:
     validation_status:bool
@@ -31,12 +32,16 @@ class ModelTrainerArtifact:
     trained_model_file_path:str 
     metric_artifact:ClassificationMetricArtifact
 
+
+
 @dataclass
 class ModelEvaluationArtifact:
     is_model_accepted:bool
     changed_accuracy:float
     s3_model_path:str 
     trained_model_path:str
+
+
 
 @dataclass
 class ModelPusherArtifact:
