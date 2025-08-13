@@ -91,5 +91,6 @@ MODEL_BUCKET_NAME = "my-modelclf-mlopsproj" # s3 bucket name where will push the
 MODEL_PUSHER_S3_KEY = "model-registry"
 
 
+''' Port where we want the PAP to run Locally '''
 APP_HOST = "0.0.0.0"
 APP_PORT = 5000

@@ -83,7 +83,7 @@ class ModelPusherConfig:
     bucket_name: str = MODEL_BUCKET_NAME
     s3_model_key_path: str = MODEL_FILE_NAME
 
-
+''' for prediction.py file , it needs to fetch the trianed ML model form S3 bucket '''
 @dataclass
 class VehiclePredictorConfig:
     model_file_path: str = MODEL_FILE_NAME
